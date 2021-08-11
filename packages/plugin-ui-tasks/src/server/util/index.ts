@@ -81,7 +81,7 @@ export function getNpmClient(): NpmClient {
   } catch (e) {}
   try {
     execSync('ayarn --version', { stdio: 'ignore' });
-    return NpmClient.ayayn;
+    return NpmClient.ayarn;
   } catch (e) {}
   try {
     execSync('tyarn --version', { stdio: 'ignore' });
